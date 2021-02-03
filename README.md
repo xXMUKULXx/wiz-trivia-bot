@@ -5,7 +5,3 @@ How to use:
 4. Enable Developer Mode (toggle button in top-right corner)
 5. Select "Load unpacked".
 6. Select the folder with the files, and you should be good to go!
-
-
-If you want to install the .crx file:
-https://github.com/anonymousCROWNS/Daily-Crowns-Quiz-Answering-Extension-Free/releases
