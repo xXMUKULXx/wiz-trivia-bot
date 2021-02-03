@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Please Wait</title>
+    <style>
+        .main {
+            background-color: #D7EAF8;
+            height: 100%;
+        }
+
+        .container {
+            text-align: center;
+            margin: auto;
+            height: 100%;
+            background-color: white;
+            padding: 8px;
+        }
+
+        .container div {
+            margin: auto;
+            padding: 10px;
+        }
+
+        .header {
+            font-weight: bold;
+            font-size: 1em;
+            border-style: none none solid none;
+            border-color: orange;
+        }
+
+        .progress {
+            background-color: #0BA601;
+        }
+
+        .nextQuiz {
+            background-color: #730aa8;
+            border: none;
+            color: #efefef;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            border-radius: 12px;
+            margin: auto;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class='main'>
+    <div class='container'>
+        <div class='header'>Daily Crown Quiz Answering Extension</div>
+        <div>Please wait for the server to refresh. The next quiz will automatically start in one minute. This window
+            can be closed and the timer will continue.</div>
+        <div id='timeLeft'>3 Seconds Remaining.</div>
+        <progress id='progressBar' class='progress' max='60' value='0'></progress>
+        <div><br>If you've waited a minute or more, within the last two quizzes, without loading a page, feel free to
+            select the next quiz.</div>
+        <button id='nextQuizButton' class='nextQuiz' type='button'>Next Quiz!</button>
+    </div>
+    <script src="waitScreen.js"></script>
+</body>
+
+</html>
